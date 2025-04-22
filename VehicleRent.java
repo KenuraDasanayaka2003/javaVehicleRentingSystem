@@ -16,7 +16,7 @@ public class VehicleRent
         {
             displayMenu();
             Scanner sc1=new Scanner(System.in);
-            System.out.println("Enter your choice : ");
+            System.out.print("Enter your choice : ");
             choice=sc1.nextInt();
             
             switch(choice)
@@ -70,11 +70,11 @@ public class VehicleRent
         
         System.out.print("Enter the type of the vehicle : ");
         String type=sc2.nextLine();
-        System.out.print("Enter the Brand of the Car : ");
+        System.out.print("Enter the Brand of the vehicle : ");
         String brand=sc2.nextLine();
-        System.out.print("Enter the Model of the Car : ");
+        System.out.print("Enter the Model of the vehicle : ");
         String model=sc2.nextLine();
-        System.out.print("Enter the Base Rate of the car : ");
+        System.out.print("Enter the Base Rate of the vehicle : ");
         double baseRate=sc2.nextDouble();
         
         if(type.equals("Car") || type.equals("car"))
@@ -105,11 +105,11 @@ public class VehicleRent
     {
         Scanner sc3=new Scanner(System.in);
        
-        System.out.println("Enter the vehicle type you need : ");
+        System.out.print("Enter the vehicle type you need : ");
         String type=sc3.nextLine();
-        System.out.println("Enter the vehicle brand you need : ");
+        System.out.print("Enter the vehicle brand you need : ");
         String brand=sc3.nextLine();
-        System.out.println("Enter the vehicle model you need : ");
+        System.out.print("Enter the vehicle model you need : ");
         String model=sc3.nextLine();
         
         if(type.equals("Car"))
@@ -153,7 +153,7 @@ public class VehicleRent
         
         System.out.print("Enter customer's Name : ");
         String name=sc4.nextLine();
-        System.out.println("Enter number of days you need to return vehicle : ");
+        System.out.print("Enter number of days you need to return vehicle : ");
         int days=sc4.nextInt();
         
         for(Vehicle v:booked)
